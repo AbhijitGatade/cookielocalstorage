@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cookie.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        let today = new Date();
+        let task = {id: 1, date: today, time: "12:00 PM", task:"Meeting", status:"open"};
+
+        console.log(task);
+        localStorage.setItem("task", JSON.stringify(task));
+        let mytask = localStorage.getItem("task");
+        let newtask = JSON.parse(localStorage.getItem("task"));
+        console.log(mytask);
+        console.log(newtask);
+       
+        // localStorage.setItem("name", "Harsh");
+        // let name = localStorage.getItem("name");
+        // console.log(name);
+
+    </script>
+</body>
+</html>

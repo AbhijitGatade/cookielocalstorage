@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cookie.js"></script>
+</head>
+<body>
+    
+    <script>
+       
+
+        setcookie("name", "Abhijit");
+        setcookie("userid", "1");
+        setcookie("type", "Teacher");
+        setcookie("name", "Nilesh");
+
+
+        let name = getcookie("name");
+        console.log("Name is : " + name);
+
+        deletecookie("name");
+        name = getcookie("name");
+        console.log("Name is : " + name);
+
+        let type = getcookie("type");
+        let x = getcookie("x");
+        console.log("X is : " + x);
+
+    </script>
+</body>
+</html>
